@@ -13,6 +13,13 @@ Já no Front-end toda a aplicação foi desenvolvida pensando em trazer uma maio
 
 Você pode conferir a aplicação: [Clique aqui 🖱️](https://feedwidget.vercel.app/).
 
+### 📱 Aplicação Mobile
+Aplicação desenvolvida utilizando o React Native:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44211093/167268097-5575e0b4-4a2b-45c0-a4d3-f1698a74bde8.gif"/>
+</p>
+
 ## ✨ Tecnologias
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
@@ -83,7 +90,24 @@ yarn dev
 ```
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
-📕 Licença
+### Executar o Mobile
+Para executar o mobile da aplicação, siga as seguintes instruções:
+```bash
+# Entre na pasta mobile
+cd mobile
+
+# Instale as dependências
+yarn
+
+# Execute a aplicação
+expo start
+
+```
+Agora é só você abrir a aplicação em um Emulador Android/IOS ou rodar no [Expo Go](https://expo.dev/client)
+
+---
+
+## 📕 Licença
 Este projeto está sob a licença [MIT](https://github.com/lucasgabriel13/FeedWidget/blob/master/LICENCE).
 
 ---
