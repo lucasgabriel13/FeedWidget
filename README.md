@@ -3,7 +3,7 @@
 
 
 ## 💻 O projeto
-Essa aplicação foi desenvolvida na NLW Return, promovida pela [Rocketseat](https://www.rocketseat.com.br/), com o objetivo de cadastrar os Feedbacks dos usuários de uma aplicação web ou mobile. Durante a semana foram desenvolvidos tanto o Front-end (Web e Mobile) quanto o Back-end da aplicação.
+Essa aplicação foi desenvolvida na NLW Return, promovida pela [Rocketseat](https://www.rocketseat.com.br/), com o objetivo de cadastrar os Feedbacks e a captura da tela ,em situações de bug, dos usuários de uma aplicação web ou mobile. Durante a semana foram desenvolvidos tanto o Front-end (Web e Mobile) quanto o Back-end da aplicação.
 
 Os Feedbacks enviados são armazenados no banco de dados da aplicação e enviados ao e-mail do responsável da aplicação através do protocolo SMTP.
 
