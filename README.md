@@ -73,6 +73,21 @@ yarn dev
 
 ```
 
+A aplicação ficará dinponível na endereço http://localhost:3333.
+
+Você pode utilizar o [Insomnia](https://insomnia.rest/download) para testar a Api.
+
+Segue a rota para testar o envio de um feedback:
+```bash
+
+# Rota: http://localhost:3333/feedbacks
+# Body da requisição:
+{
+	"type": "BUG",
+	"comment": "Está tudo bugado"
+}
+```
+
 ### Executar o Front-end
 Para executar o front-end da aplicação, siga as seguintes instruções:
 ```bash
