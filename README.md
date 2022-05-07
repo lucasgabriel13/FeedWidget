@@ -5,7 +5,7 @@
 ## 💻 O projeto
 Essa aplicação foi desenvolvida na NLW Return, promovida pela [Rocketseat](https://www.rocketseat.com.br/), com o objetivo de cadastrar os Feedbacks dos usuários de uma aplicação web ou mobile. Durante a semana foram desenvolvidos tanto o Front-end (Web e Mobile) quanto o Back-end da aplicação.
 
-Os Feedbacks enviados são armazeados no Back-end e enviados ao e-mail do responsável da aplicação através do protocolo SMTP.
+Os Feedbacks enviados são armazenados no banco de dados da aplicação e enviados ao e-mail do responsável da aplicação através do protocolo SMTP.
 
 No desenvolvimento do Back-end foi utilizado o princípio SOLID, visando diminuir o acoplamento entre classes e separar responsabilidades como forma de melhorar o código da aplicação desenvolvida. Outra ferramenta utilizado no desenvolvimento do Back-end foi o JEST, para a realização de testes unitários na API criada.
 
@@ -25,7 +25,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [ ] Tailwindcss
 - [ ] Axios
 - [ ] html2canvas
-- [ ] Acessiblilidade com HeadlessUI
+- [ ] Acessibilidade com HeadlessUI
 
 ### Back-end
 - [ ] Node.js
@@ -44,7 +44,7 @@ git clone https://github.com/lucasgabriel13/FeedWidget.git
 ```
 
 ### Executar o Back-end
-Para executar o back-end da aplicação, siga as seguintes intruções: (DICA:  faça isso antes de executar o front-end)
+Para executar o back-end da aplicação, siga as seguintes instruções: (DICA:  faça isso antes de executar o front-end)
 ```bash
 # Entre na pasta server
 cd server
@@ -67,7 +67,7 @@ yarn dev
 ```
 
 ### Executar o Front-end
-Para executar o front-end da aplicação, siga as seguintes intruções:
+Para executar o front-end da aplicação, siga as seguintes instruções:
 ```bash
 # Entre na pasta web
 cd web
@@ -75,7 +75,7 @@ cd web
 # Instale as dependências
 yarn
 
-# Crie um .env.local e insira a URL do seu Back-edn (Olhe no arquivo .env.exemple)
+# Crie um .env.local e insira a URL do seu Back-end (Olhe no arquivo .env.example)
 VITE_API_URL=http://localhost:3333
 
 # Execute a aplicação
