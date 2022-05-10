@@ -89,6 +89,7 @@ Segue a rota para testar o envio de um feedback:
 ```
 
 ### Executar o Front-end
+
 Para executar o front-end da aplicação, siga as seguintes instruções:
 ```bash
 # Entre na pasta web
@@ -119,6 +120,9 @@ expo start
 
 ```
 Agora é só você abrir a aplicação em um Emulador Android/IOS ou rodar no [Expo Go](https://expo.dev/client)
+
+Esta aplicação utiliza o Social Login com o Firebase, olhe atenciosamente no arquivo .env.example para as configurações das variáveis.
+Siga a documentação do Firebase para a realização do social login: [Acessar documentação 🖱️](https://firebase.google.com/docs/auth?hl=pt-br)
 
 ---
 
