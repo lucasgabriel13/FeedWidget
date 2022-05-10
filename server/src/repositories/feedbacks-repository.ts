@@ -1,5 +1,3 @@
-import { Feedback } from "@prisma/client";
-
 export interface FeedbackCreateData {
   type: string;
   comment: string;
@@ -8,5 +6,5 @@ export interface FeedbackCreateData {
 
 export interface FeedbacksRepository {
   create: (data: FeedbackCreateData) => Promise<void>;
-  index: () => Promise<Feedback[]>;
+  index: () => Promise<any>;
 }
