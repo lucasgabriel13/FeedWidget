@@ -4,7 +4,7 @@ import logoImg from "../assets/logo.svg";
 
 export function Main() {
   return (
-    <main className="flex items-center lg:mt-0 lg:px-0 sm:mt-20 sm:px-10">
+    <main className=" w-full max-w-[1550px] flex items-center justify-center lg:mt-0 lg:px-0 sm:mt-20 sm:px-10">
       <img
         className="w-0 lg:w-auto lg:mt-[-120px] 2xl:mt-0"
         src={bgImg}

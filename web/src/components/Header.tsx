@@ -9,7 +9,7 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="flex items-center justify-between w-full h-20 lg:px-[169px] px-4">
+    <header className="flex items-center justify-between w-full max-w-[1550px] h-20 lg:px-[169px] px-4 mx-auto">
       <div className="flex items-center gap-3">
         <img
           className="w-[50px] h-[50px]"
