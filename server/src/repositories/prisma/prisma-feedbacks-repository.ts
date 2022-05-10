@@ -14,4 +14,9 @@ export class PrismaFeedbacksRepository implements FeedbacksRepository {
       },
     });
   }
+
+  async index() {
+    const feedbacks = await prisma.feedback.findMany({});
+    return feedbacks;
+  }
 }
