@@ -2,15 +2,15 @@ import { UserProvider } from "./hook/useAuth";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Dashboard } from "./pages/Dashboard";
+import { Header } from "./components/Header";
+import Routes from "./routes";
 
 export function App() {
   return (
     <UserProvider>
       <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/dashboard" exact component={Dashboard} />
-        </Switch>
+        <Header />
+        <Routes />
       </BrowserRouter>
     </UserProvider>
   );

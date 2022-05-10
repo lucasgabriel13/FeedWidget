@@ -32,25 +32,22 @@ export function Dashboard() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <section className="flex items-center justify-center mt-24 flex-wrap gap-5">
-        <CardDashboard
-          title="Bug"
-          image={bugImageUrl}
-          count={countFeedbacks?.BUG}
-        />
-        <CardDashboard
-          title="Ideia"
-          image={ideaImageUrl}
-          count={countFeedbacks?.IDEA}
-        />
-        <CardDashboard
-          title="Outros"
-          image={thoughtImageUrl}
-          count={countFeedbacks?.OTHER}
-        />
-      </section>
-    </>
+    <section className="flex items-center justify-center mt-24 flex-wrap gap-5">
+      <CardDashboard
+        title="Bug"
+        image={bugImageUrl}
+        count={countFeedbacks?.BUG}
+      />
+      <CardDashboard
+        title="Ideia"
+        image={ideaImageUrl}
+        count={countFeedbacks?.IDEA}
+      />
+      <CardDashboard
+        title="Outros"
+        image={thoughtImageUrl}
+        count={countFeedbacks?.OTHER}
+      />
+    </section>
   );
 }
