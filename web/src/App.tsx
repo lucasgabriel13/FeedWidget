@@ -5,13 +5,13 @@ import { Dashboard } from "./pages/Dashboard";
 
 export function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <UserProvider>
+    <UserProvider>
+      <BrowserRouter>
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/dashboard" exact component={Dashboard} />
-        </UserProvider>
-      </Switch>
-    </BrowserRouter>
+        </Switch>
+      </BrowserRouter>
+    </UserProvider>
   );
 }

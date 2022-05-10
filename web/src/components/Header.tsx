@@ -23,19 +23,19 @@ export function Header() {
         {user ? (
           <>
             {location.pathname === "/dashboard" ? (
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="hover:text-brand-500 dark:hover:text-brand-500 dark:text-zinc-100 text-zinc-900 text-xl transition-colors"
               >
                 <HouseSimple size={25} />
-              </a>
+              </Link>
             ) : (
-              <a
-                href="/dashboard"
+              <Link
+                to="/dashboard"
                 className="hover:text-brand-500 dark:hover:text-brand-500 dark:text-zinc-100 text-zinc-900 text-xl transition-colors"
               >
                 <Activity size={25} />
-              </a>
+              </Link>
             )}
 
             <img
@@ -49,7 +49,12 @@ export function Header() {
             className="flex items-center justify-center gap-2 bg-brand-500 w-24 h-10 rounded-md text-zinc-100 text-md hover:bg-brand-300 transition-colors"
             onClick={signWithGoogle}
           >
-            <GoogleLogo size={20} weight="bold" className="hover:animate-pulse" /> <span className="border-l-2 pl-2">Entrar</span>
+            <GoogleLogo
+              size={20}
+              weight="bold"
+              className="hover:animate-pulse"
+            />{" "}
+            <span className="border-l-2 pl-2">Entrar</span>
           </button>
         )}
       </div>
