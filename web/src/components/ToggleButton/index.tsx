@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
-import "./index.css";
 
 export function ToggleButton() {
   const [theme, setTheme] = useState(() => {
@@ -39,8 +38,8 @@ export function ToggleButton() {
       <span
         className={`${
           theme === "dark"
-            ? "translate-x-6 bg-[url(./src/assets/sun.svg)]"
-            : "translate-x-1 bg-[url(./src/assets/moon2.svg)]"
+            ? "translate-x-6 bg-[url(/src/assets/sun.svg)]"
+            : "translate-x-1 bg-[url(/src/assets/moon2.svg)]"
         } inline-block h-4 w-4 transform rounded-full  transition-transform`}
       />
     </Switch>
