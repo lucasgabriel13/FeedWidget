@@ -23,19 +23,19 @@ export function Header() {
         {user ? (
           <>
             {location.pathname === "/dashboard" ? (
-              <Link
-                to="/"
+              <a
+                href="/"
                 className="hover:text-brand-500 dark:hover:text-brand-500 dark:text-zinc-100 text-zinc-900 text-xl transition-colors"
               >
                 <HouseSimple size={25} />
-              </Link>
+              </a>
             ) : (
-              <Link
-                to="/dashboard"
+              <a
+                href="/dashboard"
                 className="hover:text-brand-500 dark:hover:text-brand-500 dark:text-zinc-100 text-zinc-900 text-xl transition-colors"
               >
                 <Activity size={25} />
-              </Link>
+              </a>
             )}
 
             <img
