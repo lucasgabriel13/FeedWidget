@@ -6,11 +6,11 @@ export function Main() {
   return (
     <main className=" w-full max-w-[1550px] flex items-center justify-center lg:mt-0 lg:px-0 sm:mt-20 sm:px-10">
       <img
-        className="w-0 lg:w-auto lg:mt-[-120px] 2xl:mt-0"
+        className="w-0 lg:w-auto lg:mt-[-120px] lg:ml-[-600px] 2xl:mt-0"
         src={bgImg}
         alt="Circulo grande roxo com um "
       />
-      <div className="dark:text-zinc-100 text-zinc-900 text-xl md:mr-6 md:mt-[-150px] max-w-[412px] 2xl:ml-48">
+      <div className="dark:text-zinc-100 text-zinc-900 text-xl md:mr-6 md:mt-[-500px] max-w-[412px] 2xl:ml-48">
         <div className="flex items-center gap-5 h-20">
           <img
             className="mb-8 w-20 h-20"
