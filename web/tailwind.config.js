@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./src/**/*.tsx"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -11,6 +12,10 @@ module.exports = {
       borderRadius: {
         md: "4px",
       },
+      screens: {
+        sm: '270px',
+        md: '768px'
+      }
     },
   },
   plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],

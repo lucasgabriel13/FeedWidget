@@ -1,0 +1,17 @@
+.toggleButton label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: url("../../assets/moon2.svg");
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggleButton input:checked+label::after {
+  left: calc(100% - 3px);
+  transform: translateX(-100%);
+  background: url("../../assets/sun.svg");
+}
