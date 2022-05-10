@@ -46,8 +46,6 @@ function UserProvider({ children }: UserProviderProps) {
     });
   }, []);
 
-  console.log(user);
-
   async function signWithGoogle() {
     // Provider instace with Google
     const provider = new firebase.auth.GoogleAuthProvider();
