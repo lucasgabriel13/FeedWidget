@@ -1,10 +1,10 @@
-import { Header } from "../components/Header";
 import bugImageUrl from "../assets/bug.svg";
 import ideaImageUrl from "../assets/idea.svg";
 import thoughtImageUrl from "../assets/thought.svg";
 import { CardDashboard } from "../components/CardDashboard";
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
+import { ReactGA } from "../services/analytics";
 
 type countFeedbacks = {
   BUG: number;
@@ -14,6 +14,10 @@ type countFeedbacks = {
 
 export function Dashboard() {
   const [countFeedbacks, setCountFeedbacks] = useState<countFeedbacks>();
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   useEffect(() => {
     const getCountFeedbacks = async () => {
