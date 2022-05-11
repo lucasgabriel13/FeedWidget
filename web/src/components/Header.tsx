@@ -16,7 +16,9 @@ export function Header() {
           src={logoImg}
           alt="Logo do FeedWidget"
         />
-        <h1 className="dark:text-zinc-100 text-zinc-900 text-xl">FeedWidget</h1>
+        <h1 className="dark:text-zinc-100 text-zinc-900 text-xl sm:sr-only lg:not-sr-only">
+          FeedWidget
+        </h1>
       </div>
       <div className="flex items-center gap-5">
         <ToggleButton />
